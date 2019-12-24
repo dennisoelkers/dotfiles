@@ -1,6 +1,5 @@
 #!/bin/bash
 
-icon="$HOME/.i3/lock.png"
 img="$HOME/.cache/i3lock.png"
 
 # Take a screenshot for our background
