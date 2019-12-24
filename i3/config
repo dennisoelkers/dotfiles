@@ -169,6 +169,6 @@ bar {
 
 exec sudo i3status | dzen2 -dock
 exec --no-startup-id nitrogen --restore
-exec xautolock -time 5 -locker '$HOME/bin/i3lock.sh' &
+exec xautolock -time 5 -locker '$HOME/.bin/i3lock.sh' &
 exec --no-startup-id feh --bg-scale -z -D 144000 /usr/share/backgrounds
 
