@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CURRENT_SCREEN=`xrandr --current --verbose|grep primary|awk '{ print $1; }'`
+CURRENT_BRIGHTNESS=`xrandr --current --verbose|grep Brightness|awk '{ print $2; }'`
+
+NEW_BRIGHTNESS=`echo "$CURRENT_BRIGHTNESS + 0.1" | bc -l|sed "s/^\./0./g"`
+
+xrandr --output $CURRENT_SCREEN --brightness $NEW_BRIGHTNESS
+
