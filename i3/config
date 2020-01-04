@@ -153,8 +153,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym XF86MonBrightnessUp exec brghtnss + # increase screen brightness
-bindsym XF86MonBrightnessDown exec brghtnss - # decrease screen brightness
+bindsym Pause exec --no-startup-id $HOME/.bin/increase_brightness # increase screen brightness
+bindsym Scroll_Lock exec --no-startup-id $HOME/.bin/decrease_brightness # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id $HOME/.bin/increase_brightness # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id $HOME/.bin/decrease_brightness # decrease screen brightness
 bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.bin/volume_control.py down 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.bin/volume_control.py up 5
 bindsym XF86AudioMute exec --no-startup-id $HOME/.bin/volume_control.py toggle
