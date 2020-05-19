@@ -7,7 +7,6 @@
 
 export EDITOR=vim
 
-alias groovysh="groovysh -Djava.awt.headless=true"
 alias weather="curl wttr.in/Berlin"
 alias jrnl="vim +'normal Go' +'r!date' ~/journal"
 
@@ -20,4 +19,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 source ~/.dotfiles/elprompto/elprompto.zsh
+
+source ~/.nvm/nvm.sh
 
